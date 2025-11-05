@@ -117,9 +117,9 @@ Your GET API appears "faster" with more products because:
 
 ## 📈 Performance Visualization
 
-```
-Response Time Distribution:
+### GET API Response Time Distribution (End-to-End User Experience)
 
+```
 20 Products:  ████████████████████████████████████████ (High Variance)
               210ms ←→ 1080ms (870ms range)
 

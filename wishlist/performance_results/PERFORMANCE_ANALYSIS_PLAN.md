@@ -23,7 +23,6 @@ Original Test Results:
 1. Is this caused by **Algolia's batch processing optimization**?
 2. Is this due to **sparse data effects** (missing products in Algolia)?
 3. Is this **infrastructure/network variability**?
-4. Is this a **caching effect** we're not aware of?
 
 ## 📋 Investigation Methodology
 
@@ -57,10 +56,7 @@ For each of the 10 test runs, we will capture:
 - **Sparse data ratio** (percentage of missing products)
 - **Batch request efficiency**
 
-#### Application Metrics:
-- **DynamoDB query time**
-- **Product enrichment time**
-- **Response serialization time**
+
 
 ## 🔬 What We Will Analyze
 
@@ -90,22 +86,7 @@ For each of the 10 test runs, we will capture:
 
 ## 📊 Proof Documentation Strategy
 
-### Data Files We Will Create:
 
-#### 1. `RAW_TEST_DATA.txt`
-- Complete log output from all 10 test runs
-- Timestamps for each operation
-- Raw performance metrics
-
-#### 2. `ALGOLIA_ANALYSIS.txt`
-- Extracted Algolia API response times
-- Batch size vs performance correlation
-- Sparse data ratio analysis
-
-#### 3. `FINAL_CONCLUSION.txt`
-- Statistical analysis of all data
-- Definitive proof of root cause
-- Recommendations based on findings
 
 ### Metrics We Will Track:
 
